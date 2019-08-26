@@ -14,3 +14,6 @@ Also this might help when deciding which language would be the most suitable for
   - **Mutablity** - can an object fileds be changed once created? Or you want them to be frozen and Immutable?
   - **Versions / Change layers** - does this object have change history? Or maybe different fields' data is attached to this ID for different environments?
   - **Memory management** - manual/garbage-collection/reference counting
+  - **Inheritance** - is this object type inherited from some type? Can some other type inherit this object's type?
+  - **Multi-base (Diamond) inheritance** - self descriptive
+  - **components style** - does this object have different components (see this Article to know what it is: https://thelinuxlich.github.io/artemis_CSharp/)
