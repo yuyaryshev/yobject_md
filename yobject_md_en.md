@@ -1,3 +1,7 @@
+How can this list be used? When you are planning a new application or module you start from domains.
+This list have some questions which might change your vision about how you should a specific domain.
+Also this might help when deciding which language would be the most suitable for implementation.
+
 # Object properties
 
   - **Typing, schemaless/schemafull** - are all fields of the object are known?
