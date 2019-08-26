@@ -4,6 +4,5 @@ All object properties and types
 This repository trys to document ALL the object technical types available in all the languages and frameworks.
 By 'technical type' I mean not concrete fields/props, but technical implementation properties and tricks and architecture patterns and anti-patterns.
 
-The list itself is more descriptive than this doc.
-  - For english see yobject_md_en.md
-  - For russian (Русский) see yobject_md_ru.md
+The list itself is more descriptive than this doc:
+https://github.com/yuyaryshev/yobject_md/blob/master/yobject_md_en.md
