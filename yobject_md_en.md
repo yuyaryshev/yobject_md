@@ -1,6 +1,5 @@
-How can this list be used? When you are planning a new application or module you start from domains.
-This list have some questions which might change your vision about how you should a specific domain.
-Also this might help when deciding which language would be the most suitable for implementation.
+How can this list be used? When you are planning a new application or module in DDD approach you start from domains.
+This list helps you to know your domains better, to better figure out how would you hanlde them.
 
 # Object properties
 
