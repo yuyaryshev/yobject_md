@@ -1,40 +1,12 @@
-# Свойства объектов
+# Object properties
 
-Описание всех возможных свойств всех возможных объектов
-
-**Стабильность свойства** - есть или нет смысла этому свойству быть различным у разных типов, у разных объектов одного типа, у разных групп типов
-
-**БЛ** - полезно ли бизнес логике это знание для реализации
-
-**UI** - полезно ли UI это знание для реализации
-
-**IO** - полезно ли IO это знание для реализации
-
-**O** - полезно ли это свойство для компилятора своего языка и оптимизаций
-
-| Свойство                                                     | Описание                                                     | Стабильность свойства | БЛ    | UI    | IO    | O     |      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- | ----- | ----- | ----- | ----- | ---- |
-| Наличие Id                                                   |                                                              | К типу                |       |       | **+** | **+** |      |
-| Разные Id для одного объекта.                                | Внешнее хранение Id для объекта.                             | К типу                |       |       | **+** | **+** |      |
-| Persistent/runtime                                           |                                                              |                       |       |       | **+** | **+** |      |
-| Типизация - Schemaless/full                                  | Наличие или отсутствие информации о составе полей в объекте. |                       | **+** | **+** |       | **+** |      |
-| Слоистость, версионирование                                  | Возможность редактировать изменения объекта и инкрементом обновлять результат. |                       |       |       | **+** | **+** |      |
-| Вид ссылки: что хранится в ссылке, - прямая ссылка на объект, через ключ прокси - для выгружаемых, через ид, через ид + тип | Ключ прокси - это когда призрак объекта содержит ссылку на загруженный объект |                       |       |       |       | **+** |      |
-| Создание на stack                                            |                                                              |                       |       |       |       | **+** |      |
-| RAII disposial                                               |                                                              |                       |       |       |       | **+** |      |
-| Garbage-collection                                           |                                                              |                       |       |       |       |       |      |
-| Reference counting                                           |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-|                                                              |                                                              |                       |       |       |       |       |      |
-
-
-
-# Самый изолированный доступ к объекту
-
+**Typing, schemaless/schemafull** - are all fields of the object are known?
+**Presence of ID** - presence or missing of an Id property (or alike) on an object
+**Multiple ID** - presence of several Id's for one
+**Separate ID** - is Id for object stored in map<objectRef, Id> and not inside the object
+**Persistent or Runtime** - if an object can be saved and loaded to/from an external storage - server/database
+**RAII disposial** - does this kind of object requires to be "disposed" or "released"
+**Created on stack or on Heap** - close to "RAII disposal".
+**Mutablity** - can an object fileds be changed once created?
+**Versions / Change layers** - does this object have change history? Or maybe different fields' data is attached to this ID for different environments?
+**Memory management** - manual/garbage-collection/reference counting
