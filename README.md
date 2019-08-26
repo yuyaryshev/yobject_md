@@ -5,3 +5,5 @@ This repository trys to document ALL the object technical types available in all
 By 'technical type' I mean not concrete fields/props, but technical implementation properties and tricks and architecture patterns and anti-patterns.
 
 The list itself is more descriptive than this doc.
+For english see yobject_md_en.md
+For russian (Русский) see yobject_md_ru.md
