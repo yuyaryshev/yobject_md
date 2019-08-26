@@ -11,6 +11,6 @@ Also this might help when deciding which language would be the most suitable for
   - **Persistent or Runtime** - if an object can be saved and loaded to/from an external storage - server/database
   - **RAII disposial** - does this kind of object requires to be "disposed" or "released"
   - **Created on stack or on Heap** - close to "RAII disposal", but still different in some languages
-  - **Mutablity** - can an object fileds be changed once created?
+  - **Mutablity** - can an object fileds be changed once created? Or you want them to be frozen and Immutable?
   - **Versions / Change layers** - does this object have change history? Or maybe different fields' data is attached to this ID for different environments?
   - **Memory management** - manual/garbage-collection/reference counting
